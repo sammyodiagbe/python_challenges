@@ -40,7 +40,7 @@ def check_game_status(word, word_array):
 # while the game is not done
 while(not game_is_done):
     draw_word(word_array)
-    user_selection = input('Enter a letter')
+    user_selection = input('Enter a letter\n\n')
     # if the user enters a character that is in the word
     if user_selection in word:
         for index in range(len(word)):
