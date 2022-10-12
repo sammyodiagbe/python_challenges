@@ -22,11 +22,11 @@ def draw_word(word):
     print(string)
     print()
     print(f"----------|")
-    print(f" |")
-    print(f" 0")
-    print(f"{'/' if missed_chance >= 1 else ''}|{'\\' if missed_chance >= 2 else ''}")
+    print(f" |        |")
+    print(f" 0        |")
+    print(f"{'/' if missed_chance >= 1 else ''}|{chr(92) if missed_chance >= 2 else ''}      |")
     print(" | ")
-    print(f"{'/' if missed_chance >= 3 else ''}|{'\\' if missed_chance >= 4 else ''}")
+    print(f"{'/' if missed_chance >= 3 else ''}|{chr(92) if missed_chance >= 4 else ''}      |")
 
 
 def check_game_status(word, word_array):
